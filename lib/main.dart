@@ -10,8 +10,6 @@ import 'package:image_gallery_saver/image_gallery_saver.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:path/path.dart';
-import 'package:screenshot/screenshot.dart';
 
 void main() {
   runApp(MyApp());
@@ -65,10 +63,6 @@ class _HomePageState extends State<HomePage> {
         print("set");
       });
 
-      // final Directory _appDocDir = await getApplicationDocumentsDirectory();
-    //App Document Directory + folder name
-    //   final Directory _appDocDirFolder =  Directory('${_appDocDir.path}/Meme_Generator/');
-    //   _appDocDirFolder.create(recursive: true);
     }
     catch(platformException){
       print('not allowing '+ platformException);
@@ -224,7 +218,6 @@ class _HomePageState extends State<HomePage> {
       _imageFile = imgFile;
     });
     _savefile(_imageFile);
-    //saveFileLocal();
 
   }
 
