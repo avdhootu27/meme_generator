@@ -1,6 +1,6 @@
-# meme_generator
+## First Screen
 
-A new Flutter application.
+<img src="images/first-view.jpg" height=500 alt="first-view"/>
 
 ## Getting Started
 
